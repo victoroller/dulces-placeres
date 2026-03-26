@@ -1,0 +1,466 @@
+/* RESET Y BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fef7e8;
+    color: #3e2a2a;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+header {
+    background-color: #5c3b2a;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 5px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background-color: #c97e5a;
+    color: white;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+}
+
+.btn-whatsapp i {
+    margin-right: 8px;
+}
+
+.grande {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #f5e6d3 0%, #f5d5b3 100%);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4a2a1a;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* CATÁLOGO */
+.catalogo, .personalizados, .contacto {
+    padding: 60px 20px;
+}
+
+.catalogo h2, .personalizados h2, .contacto h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #5c3b2a;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #7a5a4a;
+}
+
+/* FILTROS */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.filtro-btn {
+    background: transparent;
+    border: 2px solid #c97e5a;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #c97e5a;
+    transition: all 0.3s;
+}
+
+.filtro-btn.active, .filtro-btn:hover {
+    background-color: #c97e5a;
+    color: white;
+}
+
+/* GRID DE PRODUCTOS */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.producto-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+
+.producto-imagen {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+     background-color: #f5e6d3;
+}
+
+.producto-info {
+    padding: 15px;
+}
+
+.producto-nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #5c3b2a;
+}
+
+.producto-descripcion {
+    font-size: 0.9rem;
+    color: #7a5a4a;
+    margin-bottom: 10px;
+}
+
+.producto-precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #c97e5a;
+    margin-bottom: 12px;
+}
+
+.btn-producto {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-producto i {
+    margin-right: 5px;
+}
+
+/* PERSONALIZADOS */
+.personalizados-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.personalizados-texto ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.personalizados-texto li {
+    margin: 8px 0;
+}
+
+.galeria-ejemplo {
+    background-color: #e9d9cb;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    color: #7a5a4a;
+}
+
+.galeria-ejemplo i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* CONTACTO */
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contacto-info i {
+    width: 30px;
+    color: #c97e5a;
+}
+
+.contacto-info a {
+    color: #5c3b2a;
+    text-decoration: none;
+}
+
+.contacto-info a:hover {
+    text-decoration: underline;
+}
+
+.contacto-cta {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #5c3b2a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+        text-align: center;
+        padding: 12px;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    .logo-img {
+        width: 55px;
+    }
+    
+    .tagline {
+        font-size: 0.7rem;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+    
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .personalizados-grid, .contacto-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .grid-productos {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+/* GALERÍA DE PERSONALIZADOS */
+.galeria-ejemplo h3 {
+    color: #5c3b2a;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.galeria-foto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.galeria-foto:hover {
+    transform: scale(1.05);
+}
+
+.galeria-texto {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #c97e5a;
+}
+
+/* Responsive para galería */
+@media (max-width: 768px) {
+    .galeria-imagenes {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    
+    .galeria-foto {
+        height: 120px;
+    }
+}
+
+/* GALERÍA DE PERSONALIZADOS */
+.galeria-ejemplo h3 {
+    color: #5c3b2a;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.galeria-foto {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer; /* Esto indica que se puede hacer clic */
+}
+
+.galeria-foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.galeria-texto {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #c97e5a;
+}
+
+/* Responsive para galería */
+@media (max-width: 768px) {
+    .galeria-imagenes {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    
+    .galeria-foto {
+        height: 120px;
+    }
+}

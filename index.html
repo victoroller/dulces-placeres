@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Dulces Placeres - Artesanías en Chocolate</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER / NAVEGACIÓN ==================== -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="imagenes/logo1.png" alt="Dulces Placeres - Chocolates Artesanales" class="logo-img">
+                <p class="tagline">Chocolates Artesanales</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#personalizados">Personalizados</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== SECCIÓN INICIO ==================== -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Chocolate artesanal con diseños únicos</h2>
+                <p>Huevos, conejos, chupetines y más. <strong>Personalizamos con chocotransfer</strong> el personaje que tu hijo ama.</p>
+                <div class="hero-buttons">
+                    <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+                    <a href="https://wa.me/5493854388885?text=Hola%21%20Quisiera%20consultar%20por%20sus%20productos%20de%20Pascua%20🍫" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Pedir por WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN CATÁLOGO ==================== -->
+        <section id="catalogo" class="catalogo">
+            <div class="container">
+                <h2>Nuestros productos</h2>
+                <p class="subtitulo">Elegí el que más te guste y consultanos</p>
+                
+                <!-- Filtros -->
+                <div class="filtros">
+                    <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                    <button class="filtro-btn" data-categoria="huevos">Huevos</button>
+                    <button class="filtro-btn" data-categoria="conejos">Conejos</button>
+                    <button class="filtro-btn" data-categoria="chupetines">Chupetines</button>
+                    <button class="filtro-btn" data-categoria="cajas">Cajas y bombones</button>
+                </div>
+
+                <div class="grid-productos" id="grid-productos">
+                    <!-- Los productos se cargan con JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN PERSONALIZADOS ==================== -->
+        <section id="personalizados" class="personalizados">
+            <div class="container">
+                <h2>🎨 Diseños personalizados con chocotransfer</h2>
+                <div class="personalizados-grid">
+                    <div class="personalizados-texto">
+                        <p>¿Tu hijo ama a un personaje en particular? <strong>Nosotros lo plasmamos en chocolate</strong> con nuestra técnica de chocotransfer.</p>
+                        <p>Mandanos la imagen que quieras y lo hacemos realidad en:</p>
+                        <ul>
+                            <li>🍫 Huevos de chocolate</li>
+                            <li>🐰 Conejos artesanales</li>
+                            <li>🍭 Chupetines</li>
+                            <li>📦 Cajas de bombones</li>
+                        </ul>
+                        <a href="https://wa.me/5493854388885?text=Hola%21%20Quisiera%20consultar%20por%20un%20diseño%20personalizado%20🎨" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Consultá tu personaje</a>
+                    </div>
+                    <div class="personalizados-galeria">
+    <div class="personalizados-galeria">
+    <div class="galeria-ejemplo">
+        <h3>✨ Algunos de nuestros trabajos ✨</h3>
+        <div class="galeria-imagenes">
+            <a href="imagenes/spiderman.jpg" data-lightbox="galeria-personalizados" data-title="Spiderman en chocolate - Diseño personalizado">
+                <img src="imagenes/spiderman.jpg" alt="Spiderman en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/central.jpg" data-lightbox="galeria-personalizados" data-title="Central Cordoba">
+                <img src="imagenes/central.jpg" alt="Central Cordoba" class="galeria-foto">
+            </a>
+            <a href="imagenes/colarota.jpg" data-lightbox="galeria-personalizados" data-title="Mickey Mouse en chocolate - Diseño personalizado">
+                <img src="imagenes/colarota.jpg" alt="Mickey Mouse en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/stich.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/stich.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/mitre.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/mitre.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/stich.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/stich.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/pepa.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/pepa.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/sonico.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/sonico.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/messi.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/messi.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/unicornio.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/unicornio.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/kity.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/kity.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/folk.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/folk.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/dinosaurio.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/dinosaurio.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <a href="imagenes/bumblebee.jpg" data-lightbox="galeria-personalizados" data-title="Barbie en chocolate - Diseño personalizado">
+                <img src="imagenes/bumblebee.jpg" alt="Barbie en chocolate" class="galeria-foto">
+            </a>
+            <!-- Agregá más imágenes siguiendo el mismo formato -->
+        </div>
+        <p class="galeria-texto">🎨 ¡Mandanos la imagen de tu personaje favorito y lo hacemos realidad!</p>
+    </div>
+</div>
+        </section>
+
+        <!-- ==================== SECCIÓN CONTACTO ==================== -->
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contactanos</h2>
+                <div class="contacto-grid">
+                    <div class="contacto-info">
+                        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/5493854388885" target="_blank">+54 9 4388885</a></p>
+                        <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a href="https://instagram.com/dulces_placeressss" target="_blank">@dulces_placeressss</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Zona de entregas:</strong> Santiago del Estero</p>
+                        <p><i class="fas fa-clock"></i> <strong>Pedidos:</strong> Consultá por disponibilidad y tiempos de entrega</p>
+                    </div>
+                    <div class="contacto-cta">
+                        <p>📲 Hacé tu pedido por WhatsApp y te respondemos a la brevedad</p>
+                        <a href="https://wa.me/5493854388885?text=Hola%21%20Quiero%20hacer%20un%20pedido%20🍫" target="_blank" class="btn btn-whatsapp grande"><i class="fab fa-whatsapp"></i> Escribinos ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>🍫 Dulces Placeres - Chocolates Artesanales</p>
+            <p>Pascua 2026 - Productos artesanales con amor</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+</body>
+</html>
