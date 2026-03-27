@@ -47,8 +47,8 @@ const productos = [
     { id: 21, nombre: "Caja temática Pascua Mujer", descripcion: "Contiene Conejo con oreo y 5 bombones de dulce de leche", precio: "$9.000", categoria: "cajas", imagen: "imagenes/caja abierta mujer.jpg" },
     { id: 22, nombre: "Novedoso Iphone de Chocolate", descripcion: "Stiker pantalla comestible relleno de dulce de leche o solido", precio: "$9.500", categoria: "cajas", imagen: "imagenes/iphone chocolate.jpg" },
     { id: 23, nombre: "Bolsa Estuche Pascua", descripcion: "Contiene bolsa con chocolates multicolores de formas alusivas a Pascua", precio: "$8.000", categoria: "cajas", imagen: "imagenes/estuches.jpg" },
-    { id: 23, nombre: "Caja impresa Pascua", descripcion: "Caja de 10x10 con 12 bombones de ddl ", precio: "$9.000", categoria: "cajas", imagen: "imagenes/caja impresa.jpg" },
-    { id: 23, nombre: "Caja Corazon ", descripcion: "Caja con figura oreo y 8 bombones de ddl ", precio: "$9.000", categoria: "cajas", imagen: "imagenes/caja corazon.jpg" },
+    { id: 24, nombre: "Caja impresa Pascua", descripcion: "Caja de 10x10 con 12 bombones de ddl ", precio: "$9.000", categoria: "cajas", imagen: "imagenes/caja impresa.jpg" },
+    { id: 25, nombre: "Caja Corazon ", descripcion: "Caja con figura oreo y 8 bombones de ddl ", precio: "$9.000", categoria: "cajas", imagen: "imagenes/caja corazon.jpg" },
 ];
 
 // ==================== RENDER DE PRODUCTOS CON FILTRO ====================
