@@ -15,7 +15,7 @@ if (menuToggle) {
 
 const productos = [
     // HUEVOS
-    { id: 1, nombre: "Huevo chico en estuche", descripcion: "Con confites, rocklets y gomitas", precio: "$9.500", categoria: "huevos", imagen: "imagenes/huevo en estuche.jpg" },
+    { id: 1, nombre: "Huevo chico en estuche", descripcion: "Con confites, rocklets y gomitas", precio: "$9.500", categoria: "huevos", imagen: "imagenes/huevo chico en estuche.jpg" },
     { id: 2, nombre: "Huevo mediano Copa del Mundo", descripcion: "Con confites, rocklets y gomitas", precio: "$18.000", categoria: "huevos", imagen: "imagenes/huevo mediano negro copa mundo.jpg" },
     { id: 3, nombre: "Huevo mediano Corazones dorados", descripcion: "Con confites, rocklets y gomitas", precio: "$19.500", categoria: "huevos", imagen: "imagenes/huevo mediano corazones dorados.jpg" },
     { id: 4, nombre: "Huevo chico con figuras impresas", descripcion: "Con confites, rocklets y gomitas", precio: "$9.000", categoria: "huevos", imagen: "imagenes/huevo chico river.jpg" },
